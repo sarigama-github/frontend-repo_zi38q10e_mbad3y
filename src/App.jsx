@@ -1,18 +1,21 @@
 import React from 'react';
-import HeroCover from './components/HeroCover';
-import MetricOrbit from './components/MetricOrbit';
-import PerformancePreview from './components/PerformancePreview';
+import HeaderBar from './components/HeaderBar';
+import DigitalTwin from './components/DigitalTwin';
+import InsightsScroller from './components/InsightsScroller';
+import FloatingCoach from './components/FloatingCoach';
 import BottomNav from './components/BottomNav';
 
 const App = () => {
   return (
     <div className="min-h-screen w-full bg-black text-white font-inter">
-      <HeroCover />
-      <MetricOrbit />
-      <PerformancePreview />
+      <HeaderBar />
+      <DigitalTwin />
+      <InsightsScroller />
 
-      {/* Spacer for bottom nav */}
-      <div className="h-24" />
+      {/* Spacing for bottom elements */}
+      <div className="h-28" />
+
+      <FloatingCoach />
       <BottomNav />
     </div>
   );
